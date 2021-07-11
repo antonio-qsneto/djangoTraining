@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <h1 class="corazul"> Olá </h1>
+
+    <ul>
+        <li> Item 1 </l1>
+    </ul>
+    <div class="corazul">
+        {% for itens in lista %}
+            {{itens.nome}}<br>
+            {{itens.idade}}<br>
+            {{itens.altura}}<br>
+        {% endfor %}
+    </div>
+
+
+    {% include 'footer.html' with nomes=nome %}
+
+{% endblock main %}
+
